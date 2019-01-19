@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name HDMI)(type KiCad)(uri ${KIPRJMOD}/footprint/HDMI.pretty)(options "")(descr ""))
+  (lib (name Housings_QFP)(type KiCad)(uri ${KIPRJMOD}/footprint/Housings_QFP.pretty)(options "")(descr ""))
+  (lib (name LED)(type KiCad)(uri ${KIPRJMOD}/footprint/LED.pretty)(options "")(descr ""))
+)

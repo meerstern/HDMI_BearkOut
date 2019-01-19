@@ -1,0 +1,82 @@
+
+(rules PCB hdmi
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1404)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear -0.1 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND /5V "Net-(C2-Pad1)" "Net-(C3-Pad1)" +3V3 /VSYNC /HSYNC /DE
+    /DATA0 /DATA1 /DATA2 /DATA3 /DATA4 /DATA5 /IDCK+ "/IDCK-"
+    /DATA6 /DATA7 /DATA8 /DATA9 /DATA10 /DATA11 /DATA12 /DATA13
+    /DATA14 /DATA15 /DATA16 /DATA17 /DATA18 /DATA19 /DATA20 /DATA21
+    /DATA22 /DATA23 /D2+ "/D2-" /D0+ "/D0-" /SCL /D1+
+    "/D1-" /CK+ "/CK-" /SDA /EDGE /PD /ISEL /DSEL
+    /BSEL /DKEN "Net-(R8-Pad1)" /MSEN /CTL1 /CTL2 /CTL3 "Net-(D1-PadK)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
