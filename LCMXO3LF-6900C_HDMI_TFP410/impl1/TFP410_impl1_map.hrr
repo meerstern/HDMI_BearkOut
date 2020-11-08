@@ -1,0 +1,40 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     347.00        100.0
+                                  LUT4	     235.00        100.0
+                                 IOBUF	         16        100.0
+                                PFUREG	        259        100.0
+                                RIPPLE	        224        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              vga_core	          1        89.9
+                                   clk	          1         0.0
+---------------------------------------------------
+Report for cell clk
+   Instance path: top/clk
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell vga_core
+   Instance path: top/u_vga_core
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     312.08        89.9
+                                  LUT4	     220.00        93.6
+                                PFUREG	        204        78.8
+                                RIPPLE	        195        87.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            vga_timing	          1        15.3
+---------------------------------------------------
+Report for cell vga_timing
+   Instance path: top/u_vga_core/u0_vga_timing
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      53.00        15.3
+                                  LUT4	      69.00        29.4
+                                PFUREG	         46        17.8
+                                RIPPLE	         18         8.0

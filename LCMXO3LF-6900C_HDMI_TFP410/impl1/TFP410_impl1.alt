@@ -1,0 +1,24 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sat Jan 19 00:46:06 2019 *
+NOTE DESIGN NAME: top *
+NOTE DEVICE NAME: LCMXO3LF-6900C-5CABGA256 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS out_vga_hs : C4 : out *
+NOTE PINS out_vga_vs : E9 : out *
+NOTE PINS out_vga_de : F7 : out *
+NOTE PINS out_vga_ck : B9 : out *
+NOTE PINS out_vga_r : D8 : out *
+NOTE PINS out_vga_g : C7 : out *
+NOTE PINS out_vga_b : D6 : out *
+NOTE PINS led[7] : P16 : out *
+NOTE PINS led[6] : N15 : out *
+NOTE PINS led[5] : L13 : out *
+NOTE PINS led[4] : K11 : out *
+NOTE PINS led[3] : L12 : out *
+NOTE PINS led[2] : J11 : out *
+NOTE PINS led[1] : J13 : out *
+NOTE PINS led[0] : H11 : out *
+NOTE PINS rst_l : B3 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

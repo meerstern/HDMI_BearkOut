@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.10.0.111.2
+Thu Jan 17 22:44:37 2019
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n clk -lang verilog -synth lse -arch xo3c00f -type pll -fin 13.3 -fclkop 40 -fclkop_tol 10.0 -trimp 0 -phasep 0 -trimp_r -phase_cntl STATIC -fb_mode 1 
+    Circuit name     : clk
+    Module type      : pll
+    Module Version   : 5.7
+    Ports            : 
+    Inputs       : CLKI
+    Outputs      : CLKOP
+    I/O buffer       : not inserted
+    EDIF output      : clk.edn
+    Verilog output   : clk.v
+    Verilog template : clk_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : clk.srp
+    Estimated Resource Usage:
+  
+END   SCUBA Module Synthesis
+

@@ -1,0 +1,221 @@
+[ START MERGED ]
+n3545 mode_bit
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+u_vga_core/u0_vga_timing/add_277_17/S1
+u_vga_core/u0_vga_timing/add_277_17/CO
+u_vga_core/u0_vga_timing/add_8_1/S0
+u_vga_core/u0_vga_timing/add_8_1/CI
+u_vga_core/u0_vga_timing/add_277_1/S0
+u_vga_core/u0_vga_timing/add_277_1/CI
+u_vga_core/u0_vga_timing/add_8_17/S1
+u_vga_core/u0_vga_timing/add_8_17/CO
+u_vga_core/equal_62_0/S1
+u_vga_core/equal_62_0/S0
+u_vga_core/equal_62_0/CI
+u_vga_core/sub_29_add_2_1/S0
+u_vga_core/sub_29_add_2_1/CI
+u_vga_core/equal_57_0/S1
+u_vga_core/equal_57_0/S0
+u_vga_core/equal_57_0/CI
+u_vga_core/sub_306_add_2_9/S1
+u_vga_core/sub_306_add_2_9/S0
+u_vga_core/equal_62_11/S1
+u_vga_core/equal_62_11/S0
+u_vga_core/equal_62_13/S1
+u_vga_core/equal_62_13/S0
+u_vga_core/sub_306_add_2_11/S1
+u_vga_core/sub_306_add_2_11/S0
+u_vga_core/equal_62_15/S1
+u_vga_core/equal_62_15/S0
+u_vga_core/equal_62_16/S0
+u_vga_core/equal_62_16/CO
+u_vga_core/equal_65_0/S1
+u_vga_core/equal_65_0/S0
+u_vga_core/equal_65_0/CI
+u_vga_core/sub_61_add_2_17/S1
+u_vga_core/sub_61_add_2_17/CO
+u_vga_core/sub_306_add_2_13/S1
+u_vga_core/sub_306_add_2_13/S0
+u_vga_core/equal_65_11/S1
+u_vga_core/equal_65_11/S0
+u_vga_core/sub_32_add_2_1/S0
+u_vga_core/sub_32_add_2_1/CI
+u_vga_core/equal_59_11/S1
+u_vga_core/equal_59_11/S0
+u_vga_core/sub_32_add_2_13/CO
+u_vga_core/sub_33_add_2_1/S0
+u_vga_core/sub_33_add_2_1/CI
+u_vga_core/sub_306_add_2_15/S1
+u_vga_core/sub_306_add_2_15/S0
+u_vga_core/sub_33_add_2_13/CO
+u_vga_core/sub_306_add_2_17/S0
+u_vga_core/sub_306_add_2_17/CO
+u_vga_core/equal_65_13/S1
+u_vga_core/equal_65_13/S0
+u_vga_core/equal_65_15/S1
+u_vga_core/equal_65_15/S0
+u_vga_core/equal_57_15/S1
+u_vga_core/equal_57_15/S0
+u_vga_core/equal_65_16/S0
+u_vga_core/equal_65_16/CO
+u_vga_core/add_58_1/S0
+u_vga_core/add_58_1/CI
+u_vga_core/add_58_13/S1
+u_vga_core/add_58_13/CO
+u_vga_core/add_64_1/S0
+u_vga_core/add_64_1/CI
+u_vga_core/equal_59_15/S1
+u_vga_core/equal_59_15/S0
+u_vga_core/equal_59_16/S0
+u_vga_core/equal_59_16/CO
+u_vga_core/add_64_15/S1
+u_vga_core/add_64_15/CO
+u_vga_core/add_78_2/S0
+u_vga_core/add_78_2/CI
+u_vga_core/add_78_24/CO
+u_vga_core/add_79_2/S0
+u_vga_core/add_79_2/CI
+u_vga_core/add_79_24/CO
+u_vga_core/add_113_1/S0
+u_vga_core/add_113_1/CI
+u_vga_core/sub_29_add_2_17/S1
+u_vga_core/sub_29_add_2_17/CO
+u_vga_core/sub_308_add_2_1/S1
+u_vga_core/sub_308_add_2_1/S0
+u_vga_core/sub_308_add_2_1/CI
+u_vga_core/add_113_13/CO
+u_vga_core/add_119_1/S0
+u_vga_core/add_119_1/CI
+u_vga_core/add_119_13/CO
+u_vga_core/sub_312_add_2_1/S1
+u_vga_core/sub_312_add_2_1/S0
+u_vga_core/sub_312_add_2_1/CI
+u_vga_core/sub_312_add_2_3/S1
+u_vga_core/sub_312_add_2_3/S0
+u_vga_core/sub_308_add_2_3/S1
+u_vga_core/sub_308_add_2_3/S0
+u_vga_core/sub_30_add_2_1/S0
+u_vga_core/sub_30_add_2_1/CI
+u_vga_core/sub_308_add_2_5/S1
+u_vga_core/sub_308_add_2_5/S0
+u_vga_core/equal_57_11/S1
+u_vga_core/equal_57_11/S0
+u_vga_core/sub_312_add_2_5/S1
+u_vga_core/sub_312_add_2_5/S0
+u_vga_core/sub_312_add_2_7/S1
+u_vga_core/sub_312_add_2_7/S0
+u_vga_core/sub_312_add_2_9/S1
+u_vga_core/sub_312_add_2_9/S0
+u_vga_core/sub_308_add_2_7/S1
+u_vga_core/sub_308_add_2_7/S0
+u_vga_core/sub_312_add_2_11/S1
+u_vga_core/sub_312_add_2_11/S0
+u_vga_core/sub_312_add_2_13/S1
+u_vga_core/sub_312_add_2_13/S0
+u_vga_core/sub_312_add_2_15/S1
+u_vga_core/sub_312_add_2_15/S0
+u_vga_core/sub_312_add_2_17/S0
+u_vga_core/sub_312_add_2_17/CO
+u_vga_core/add_185_17/S1
+u_vga_core/add_185_17/CO
+u_vga_core/sub_308_add_2_9/S1
+u_vga_core/sub_308_add_2_9/S0
+u_vga_core/sub_308_add_2_11/S1
+u_vga_core/sub_308_add_2_11/S0
+u_vga_core/sub_310_add_2_1/S1
+u_vga_core/sub_310_add_2_1/S0
+u_vga_core/sub_310_add_2_1/CI
+u_vga_core/add_186_1/S0
+u_vga_core/add_186_1/CI
+u_vga_core/sub_30_add_2_17/S1
+u_vga_core/sub_30_add_2_17/CO
+u_vga_core/sub_56_add_2_1/S0
+u_vga_core/sub_56_add_2_1/CI
+u_vga_core/sub_310_add_2_3/S1
+u_vga_core/sub_310_add_2_3/S0
+u_vga_core/sub_310_add_2_5/S1
+u_vga_core/sub_310_add_2_5/S0
+u_vga_core/sub_310_add_2_7/S1
+u_vga_core/sub_310_add_2_7/S0
+u_vga_core/equal_57_13/S1
+u_vga_core/equal_57_13/S0
+u_vga_core/equal_57_16/S0
+u_vga_core/equal_57_16/CO
+u_vga_core/sub_308_add_2_13/S1
+u_vga_core/sub_308_add_2_13/S0
+u_vga_core/sub_308_add_2_15/S1
+u_vga_core/sub_308_add_2_15/S0
+u_vga_core/sub_308_add_2_17/S0
+u_vga_core/sub_308_add_2_17/CO
+u_vga_core/sub_310_add_2_9/S1
+u_vga_core/sub_310_add_2_9/S0
+u_vga_core/sub_310_add_2_11/S1
+u_vga_core/sub_310_add_2_11/S0
+u_vga_core/sub_310_add_2_13/S1
+u_vga_core/sub_310_add_2_13/S0
+u_vga_core/sub_306_add_2_1/S1
+u_vga_core/sub_306_add_2_1/S0
+u_vga_core/sub_306_add_2_1/CI
+u_vga_core/sub_310_add_2_15/S1
+u_vga_core/sub_310_add_2_15/S0
+u_vga_core/sub_306_add_2_3/S1
+u_vga_core/sub_306_add_2_3/S0
+u_vga_core/equal_59_13/S1
+u_vga_core/equal_59_13/S0
+u_vga_core/sub_310_add_2_17/S0
+u_vga_core/sub_310_add_2_17/CO
+u_vga_core/sub_56_add_2_17/S1
+u_vga_core/sub_56_add_2_17/CO
+u_vga_core/sub_61_add_2_1/S0
+u_vga_core/sub_61_add_2_1/CI
+u_vga_core/add_186_17/S1
+u_vga_core/add_186_17/CO
+u_vga_core/add_185_1/S0
+u_vga_core/add_185_1/CI
+u_vga_core/sub_306_add_2_5/S1
+u_vga_core/sub_306_add_2_5/S0
+u_vga_core/sub_306_add_2_7/S1
+u_vga_core/sub_306_add_2_7/S0
+u_vga_core/equal_59_0/S1
+u_vga_core/equal_59_0/S0
+u_vga_core/equal_59_0/CI
+led_cnt_450_add_4_1/S0
+led_cnt_450_add_4_1/CI
+led_cnt_450_add_4_31/S1
+led_cnt_450_add_4_31/CO
+random_num_449_480_add_4_1/S0
+random_num_449_480_add_4_1/CI
+random_num_449_480_add_4_25/S1
+random_num_449_480_add_4_25/CO
+[ END CLIPPED ]
+[ START OSC ]
+clk_13_3m 13.30
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Sat Jan 19 00:45:00 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=13.3 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "out_vga_hs" SITE "C4" ;
+LOCATE COMP "out_vga_vs" SITE "E9" ;
+LOCATE COMP "out_vga_de" SITE "F7" ;
+LOCATE COMP "out_vga_ck" SITE "B9" ;
+LOCATE COMP "out_vga_r" SITE "D8" ;
+LOCATE COMP "out_vga_g" SITE "C7" ;
+LOCATE COMP "out_vga_b" SITE "D6" ;
+LOCATE COMP "led[7]" SITE "P16" ;
+LOCATE COMP "led[6]" SITE "N15" ;
+LOCATE COMP "led[5]" SITE "L13" ;
+LOCATE COMP "led[4]" SITE "K11" ;
+LOCATE COMP "led[3]" SITE "L12" ;
+LOCATE COMP "led[2]" SITE "J11" ;
+LOCATE COMP "led[1]" SITE "J13" ;
+LOCATE COMP "led[0]" SITE "H11" ;
+LOCATE COMP "rst_l" SITE "B3" ;
+FREQUENCY NET "out_vga_ck_c" 39.900000 MHz ;
+FREQUENCY NET "clk_13_3m" 13.300000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

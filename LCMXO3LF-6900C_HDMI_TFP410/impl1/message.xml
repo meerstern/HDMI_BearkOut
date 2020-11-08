@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/31_WS/Lattice/HDMI_TFP410/TFP410.lpf(1): Semantic error in &quot;LOCATE COMP &quot;clk_12m&quot; SITE &quot;C8&quot; ;&quot;: </Dynamic>
+            <Dynamic>clk_12m</Dynamic>
+            <Navigation>D:/31_WS/Lattice/HDMI_TFP410/TFP410.lpf</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/31_WS/Lattice/HDMI_TFP410/TFP410.lpf(18): Semantic error in &quot;IOBUF PORT &quot;clk_12m&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>clk_12m</Dynamic>
+            <Navigation>D:/31_WS/Lattice/HDMI_TFP410/TFP410.lpf</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901208</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_core.v(151): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_core.v</Navigation>
+            <Navigation>151</Navigation>
+        </Message>
+        <Message>
+            <ID>35901208</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_core.v(152): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_core.v</Navigation>
+            <Navigation>152</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/top.v(59): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/top.v</Navigation>
+            <Navigation>59</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1759): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;13.3&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1759</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/clk.v(8): </Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/clk.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1696): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKFB_DIV=3,CLKOP_DIV=13,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=12,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1696</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_core.v(25): </Dynamic>
+            <Dynamic>vga_core</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_core.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_core.v(125): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_core.v</Navigation>
+            <Navigation>125</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_core.v(126): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_core.v</Navigation>
+            <Navigation>126</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_core.v(234): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_core.v</Navigation>
+            <Navigation>234</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_core.v(244): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_core.v</Navigation>
+            <Navigation>244</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/vga_timing.v(105): </Dynamic>
+            <Dynamic>vga_timing</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/vga_timing.v</Navigation>
+            <Navigation>105</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/31_ws/lattice/hdmi_tfp410/top.v(218): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>30</Dynamic>
+            <Navigation>d:/31_ws/lattice/hdmi_tfp410/top.v</Navigation>
+            <Navigation>218</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk_13_3m loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk_13_3m loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

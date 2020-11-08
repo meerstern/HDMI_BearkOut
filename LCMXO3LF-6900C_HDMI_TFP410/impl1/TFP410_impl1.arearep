@@ -1,0 +1,69 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  259 of 7485 (3.460%)
+I/O cells:      16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       224          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX        31          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX        93          100.0
+                            FD1P3JX         5          100.0
+                            FD1S3AX        85          100.0
+                            FD1S3AY         3          100.0
+                            FD1S3IX        38          100.0
+                            FD1S3JX         3          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                               LUT4       235          100.0
+                                 OB        15          100.0
+                               OSCH         1          100.0
+                              PFUMX         7          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                                clk         1
+                           vga_core         1
+                         vga_timing         1
+                              TOTAL       748
+----------------------------------------------------------------------
+Report for cell clk.v1
+Instance Path : clk
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell vga_core.v1
+Instance Path : u_vga_core
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       195           87.1
+                            FD1P3AX        31          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX        93          100.0
+                            FD1P3JX         5          100.0
+                            FD1S3AX        30           35.3
+                            FD1S3AY         3          100.0
+                            FD1S3IX        38          100.0
+                            FD1S3JX         3          100.0
+                               LUT4       220           93.6
+                              PFUMX         7          100.0
+SUB MODULES
+                         vga_timing         1
+                              TOTAL       627
+----------------------------------------------------------------------
+Report for cell vga_timing.v1
+Instance Path : u_vga_core.u0_vga_timing
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        18            8.0
+                            FD1P3AX        16           51.6
+                            FD1P3AY         1          100.0
+                            FD1S3AX         5            5.9
+                            FD1S3AY         3          100.0
+                            FD1S3IX        20           52.6
+                            FD1S3JX         1           33.3
+                               LUT4        69           29.4
+                              PFUMX         7          100.0
+                              TOTAL       140

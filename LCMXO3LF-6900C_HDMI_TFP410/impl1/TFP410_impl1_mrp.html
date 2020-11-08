@@ -1,0 +1,892 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'top'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO3LF -p LCMXO3LF-6900C -t CABGA256 -s 5 -oc
+     Commercial TFP410_impl1.ngd -o TFP410_impl1_map.ncd -pr TFP410_impl1.prf
+     -mp TFP410_impl1.mrp -lpf
+     D:/31_WS/Lattice/HDMI_TFP410/impl1/TFP410_impl1.lpf -lpf
+     D:/31_WS/Lattice/HDMI_TFP410/TFP410.lpf -c 0 -gui -msgset
+     D:/31_WS/Lattice/HDMI_TFP410/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO3LF-6900CCABGA256
+Target Performance:   5
+Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  01/19/19  00:44:58
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    259 out of  7485 (3%)
+      PFU registers:          259 out of  6864 (4%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:       347 out of  3432 (10%)
+      SLICEs as Logic/ROM:    347 out of  3432 (10%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:        224 out of  3432 (7%)
+   Number of LUT4s:        683 out of  6864 (10%)
+      Number used as logic LUTs:        235
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      448
+      Number used as shift registers:     0
+   Number of PIO sites used: 16 + 4(JTAG) out of 207 (10%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net out_vga_ck_c: 153 loads, 153 rising, 0 falling (Driver: clk/PLLInst_0 )
+     
+
+     Net clk_13_3m: 1 loads, 1 rising, 0 falling (Driver: IOSC )
+   Number of Clock Enables:  10
+     Net mode_bit: 4 loads, 4 LSLICEs
+     Net out_vga_ck_c_enable_80: 9 loads, 9 LSLICEs
+     Net out_vga_ck_c_enable_69: 8 loads, 8 LSLICEs
+     Net out_vga_ck_c_enable_82: 1 loads, 1 LSLICEs
+     Net out_vga_ck_c_enable_71: 1 loads, 1 LSLICEs
+     Net u_vga_core/out_vga_ck_c_enable_53: 24 loads, 24 LSLICEs
+     Net u_vga_core/out_vga_ck_c_enable_65: 2 loads, 2 LSLICEs
+     Net u_vga_core/out_vga_ck_c_enable_34: 3 loads, 3 LSLICEs
+     Net u_vga_core/u0_vid_new_frame: 16 loads, 16 LSLICEs
+     Net u_vga_core/u0_vga_timing/h_rollover: 10 loads, 10 LSLICEs
+   Number of LSRs:  10
+     Net mode_bit: 45 loads, 45 LSLICEs
+     Net u0_vid_new_line: 8 loads, 8 LSLICEs
+     Net u_vga_core/out_vga_ck_c_enable_53: 4 loads, 4 LSLICEs
+     Net u_vga_core/n1964: 2 loads, 2 LSLICEs
+     Net u_vga_core/n1274: 2 loads, 2 LSLICEs
+     Net u_vga_core/n1248: 2 loads, 2 LSLICEs
+     Net u_vga_core/u0_vid_new_frame: 5 loads, 5 LSLICEs
+     Net u_vga_core/u0_vga_timing/n1230: 9 loads, 9 LSLICEs
+     Net u_vga_core/u0_vga_timing/cnt_h_15__N_741: 2 loads, 2 LSLICEs
+     Net u_vga_core/u0_vga_timing/n35: 3 loads, 3 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net mode_bit: 87 loads
+     Net n2448: 33 loads
+     Net u_vga_core/out_vga_ck_c_enable_53: 28 loads
+     Net u_vga_core/u0_vid_new_frame: 21 loads
+     Net u_vga_core/u0_vga_timing/n6: 17 loads
+     Net u_vga_core/n2453: 16 loads
+     Net u_vga_core/n2457: 16 loads
+     Net u_vga_core/u0_vga_timing/n23: 16 loads
+     Net u_vga_core/ball_x_dir_11: 14 loads
+     Net u_vga_core/ball_y_dir_11: 14 loads
+
+
+
+
+   Number of warnings:  2
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: D:/31_WS/Lattice/HDMI_TFP410/TFP410.lpf(1): Semantic error in
+     "LOCATE COMP "clk_12m" SITE "C8" ;": COMP "clk_12m" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/31_WS/Lattice/HDMI_TFP410/TFP410.lpf(18): Semantic error in
+     "IOBUF PORT "clk_12m" IO_TYPE=LVCMOS33 ;": Port "clk_12m" does not exist in
+     the design. This preference has been disabled.
+
+
+
+
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| out_vga_hs          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| out_vga_vs          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| out_vga_de          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| out_vga_ck          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| out_vga_r           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| out_vga_g           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| out_vga_b           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[7]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_l               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i2258 undriven or does not drive anything - clipped.
+Signal n3545 was merged into signal mode_bit
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal u_vga_core/u0_vga_timing/add_277_17/S1 undriven or does not drive
+     anything - clipped.
+Signal u_vga_core/u0_vga_timing/add_277_17/CO undriven or does not drive
+     anything - clipped.
+Signal u_vga_core/u0_vga_timing/add_8_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/u0_vga_timing/add_8_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/u0_vga_timing/add_277_1/S0 undriven or does not drive anything
+     - clipped.
+Signal u_vga_core/u0_vga_timing/add_277_1/CI undriven or does not drive anything
+
+     - clipped.
+Signal u_vga_core/u0_vga_timing/add_8_17/S1 undriven or does not drive anything
+     - clipped.
+Signal u_vga_core/u0_vga_timing/add_8_17/CO undriven or does not drive anything
+     - clipped.
+Signal u_vga_core/equal_62_0/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_0/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_0/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_29_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_29_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_57_0/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_0/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_0/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_306_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_62_11/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_11/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_13/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_13/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_306_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_62_15/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_15/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_16/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_62_16/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_0/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_0/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_0/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_61_add_2_17/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_61_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_65_11/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_11/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_32_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_32_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_59_11/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_11/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_32_add_2_13/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_33_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_33_add_2_1/CI undriven or does not drive anything -
+     clipped.
+
+Signal u_vga_core/sub_306_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_33_add_2_13/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_65_13/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_13/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_15/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_15/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_15/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_15/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_16/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_65_16/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_58_1/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_58_1/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/add_58_13/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_58_13/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_64_1/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_64_1/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_15/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_15/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_16/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_16/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_64_15/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_64_15/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_78_2/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_78_2/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/add_78_24/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_79_2/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_79_2/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/add_79_24/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_113_1/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_113_1/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_29_add_2_17/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_29_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/add_113_13/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_119_1/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_119_1/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/add_119_13/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_312_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+
+Signal u_vga_core/sub_312_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_30_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_30_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_57_11/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_11/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_312_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_312_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/add_185_17/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_185_17/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_308_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+
+Signal u_vga_core/sub_308_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/add_186_1/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_186_1/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_30_add_2_17/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_30_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_56_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_56_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_57_13/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_13/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_16/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_57_16/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_308_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_308_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+
+Signal u_vga_core/sub_310_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_59_13/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_13/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_310_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_310_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_56_add_2_17/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_56_add_2_17/CO undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_61_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_61_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/add_186_17/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_186_17/CO undriven or does not drive anything - clipped.
+Signal u_vga_core/add_185_1/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/add_185_1/CI undriven or does not drive anything - clipped.
+Signal u_vga_core/sub_306_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/sub_306_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal u_vga_core/equal_59_0/S1 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_0/S0 undriven or does not drive anything - clipped.
+Signal u_vga_core/equal_59_0/CI undriven or does not drive anything - clipped.
+Signal led_cnt_450_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal led_cnt_450_add_4_1/CI undriven or does not drive anything - clipped.
+Signal led_cnt_450_add_4_31/S1 undriven or does not drive anything - clipped.
+Signal led_cnt_450_add_4_31/CO undriven or does not drive anything - clipped.
+Signal random_num_449_480_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal random_num_449_480_add_4_1/CI undriven or does not drive anything -
+
+     clipped.
+Signal random_num_449_480_add_4_25/S1 undriven or does not drive anything -
+     clipped.
+Signal random_num_449_480_add_4_25/CO undriven or does not drive anything -
+     clipped.
+Block i315_1_lut_rep_45 was optimized away.
+Block i1 was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                clk/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             NODE     clk_13_3m
+  Output Clock(P):                         PIN,NODE out_vga_ck_c
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     out_vga_ck_c
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      13.3000
+  Output Clock(P) Frequency (MHz):                  39.9000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    3
+  CLKOP Divider:                                    13
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                IOSC
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk_13_3m
+  OSC Nominal Frequency (MHz):                      13.30
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: IOSC
+         Type: OSCH
+Instance Name: clk/PLLInst_0
+         Type: EHXPLLJ
+
+
+
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_l_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_l_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 158 
+
+     Type and instance name of component: 
+   Register : u_vga_core/vga_rgb_i1
+   Register : u_vga_core/ball_x_dir_i1
+   Register : u_vga_core/line_x_pos_i0
+   Register : u_vga_core/line_y_pos_i0
+   Register : u_vga_core/ball_y_pos_i23
+   Register : u_vga_core/demo_mode_i0_i0
+   Register : u_vga_core/ball_x_pos_i0
+   Register : u_vga_core/ball_y_pos_i22
+   Register : u_vga_core/dir_chg_sr_i0_i0
+   Register : u_vga_core/u0_pel_x__i0
+   Register : u_vga_core/ball_y_pos_i21
+   Register : u_vga_core/ball_y_pos_i0
+   Register : u_vga_core/ball_x_dir_i0
+   Register : u_vga_core/ball_y_dir_i0
+   Register : u_vga_core/ball_y_pos_i20
+   Register : u_vga_core/ball_y_pos_i19
+   Register : u_vga_core/mode_bit_p1_167
+   Register : u_vga_core/u0_pel_y__i6
+   Register : u_vga_core/ball_y_pos_i18
+   Register : u_vga_core/ball_y_pos_i17
+   Register : u_vga_core/ball_y_pos_i16
+   Register : u_vga_core/ball_y_pos_i15
+   Register : u_vga_core/ball_y_pos_i14
+   Register : u_vga_core/u0_pel_y__i5
+   Register : u_vga_core/ball_y_pos_i12
+   Register : u_vga_core/ball_y_pos_i9
+   Register : u_vga_core/ball_y_pos_i8
+   Register : u_vga_core/ball_y_pos_i7
+   Register : u_vga_core/ball_y_pos_i6
+   Register : u_vga_core/ball_y_pos_i5
+   Register : u_vga_core/ball_y_pos_i4
+   Register : u_vga_core/ball_y_pos_i3
+   Register : u_vga_core/ball_y_pos_i2
+   Register : u_vga_core/ball_y_pos_i1
+
+   Register : u_vga_core/u0_pel_y__i4
+   Register : u_vga_core/u0_pel_y__i3
+   Register : u_vga_core/u0_pel_y__i2
+   Register : u_vga_core/u0_pel_y__i1
+   Register : u_vga_core/u0_pel_x__i15
+   Register : u_vga_core/u0_pel_x__i14
+   Register : u_vga_core/u0_pel_x__i13
+   Register : u_vga_core/u0_pel_x__i12
+   Register : u_vga_core/u0_pel_x__i11
+   Register : u_vga_core/u0_pel_x__i10
+   Register : u_vga_core/u0_pel_x__i9
+   Register : u_vga_core/u0_pel_x__i8
+   Register : u_vga_core/u0_pel_x__i7
+   Register : u_vga_core/u0_pel_x__i6
+   Register : u_vga_core/u0_pel_x__i5
+   Register : u_vga_core/u0_pel_x__i4
+   Register : u_vga_core/u0_pel_x__i3
+   Register : u_vga_core/u0_pel_x__i2
+   Register : u_vga_core/u0_pel_x__i1
+   Register : u_vga_core/dir_chg_sr_i0_i3
+   Register : u_vga_core/dir_chg_sr_i0_i2
+   Register : u_vga_core/dir_chg_sr_i0_i1
+   Register : u_vga_core/ball_x_pos_i23
+   Register : u_vga_core/ball_x_pos_i22
+   Register : u_vga_core/ball_x_pos_i21
+   Register : u_vga_core/ball_x_pos_i20
+   Register : u_vga_core/ball_x_pos_i19
+   Register : u_vga_core/ball_x_pos_i18
+   Register : u_vga_core/ball_x_pos_i17
+   Register : u_vga_core/ball_x_pos_i16
+   Register : u_vga_core/ball_x_pos_i14
+   Register : u_vga_core/ball_x_pos_i13
+   Register : u_vga_core/ball_x_pos_i11
+   Register : u_vga_core/ball_x_pos_i10
+   Register : u_vga_core/ball_x_pos_i9
+   Register : u_vga_core/ball_x_pos_i8
+   Register : u_vga_core/ball_x_pos_i7
+   Register : u_vga_core/ball_x_pos_i6
+   Register : u_vga_core/ball_x_pos_i5
+   Register : u_vga_core/ball_x_pos_i4
+   Register : u_vga_core/ball_x_pos_i3
+   Register : u_vga_core/ball_x_pos_i2
+   Register : u_vga_core/ball_x_pos_i1
+   Register : u_vga_core/line_y_pos_i15
+   Register : u_vga_core/line_y_pos_i14
+   Register : u_vga_core/line_y_pos_i13
+   Register : u_vga_core/line_y_pos_i12
+   Register : u_vga_core/line_y_pos_i11
+   Register : u_vga_core/line_y_pos_i10
+   Register : u_vga_core/line_y_pos_i9
+   Register : u_vga_core/line_y_pos_i8
+   Register : u_vga_core/line_y_pos_i7
+   Register : u_vga_core/line_y_pos_i6
+   Register : u_vga_core/line_y_pos_i5
+   Register : u_vga_core/line_y_pos_i4
+   Register : u_vga_core/line_y_pos_i3
+
+   Register : u_vga_core/line_y_pos_i2
+   Register : u_vga_core/line_y_pos_i1
+   Register : u_vga_core/ball_x_pos_i12
+   Register : u_vga_core/ball_x_pos_i15
+   Register : u_vga_core/ball_y_pos_i10
+   Register : u_vga_core/ball_y_pos_i11
+   Register : u_vga_core/line_x_pos_i15
+   Register : u_vga_core/ball_y_pos_i13
+   Register : u_vga_core/vga_rgb_tp__i1
+   Register : u_vga_core/vga_rgb_tp__i2
+   Register : u_vga_core/vga_rgb_tp__i3
+   Register : u_vga_core/u0_pel_y__i0
+   Register : u_vga_core/line_x_pos_i14
+   Register : u_vga_core/line_x_pos_i13
+   Register : u_vga_core/line_x_pos_i12
+   Register : u_vga_core/line_x_pos_i11
+   Register : u_vga_core/line_x_pos_i10
+   Register : u_vga_core/line_x_pos_i9
+   Register : u_vga_core/line_x_pos_i8
+   Register : u_vga_core/line_x_pos_i7
+   Register : u_vga_core/line_x_pos_i6
+   Register : u_vga_core/line_x_pos_i5
+   Register : u_vga_core/line_x_pos_i4
+   Register : u_vga_core/line_x_pos_i3
+   Register : u_vga_core/line_x_pos_i2
+   Register : u_vga_core/line_x_pos_i1
+   Register : u_vga_core/ball_rgb__i16
+   Register : u_vga_core/ball_rgb__i8
+   Register : u_vga_core/vga_rgb_i3
+   Register : u_vga_core/vga_rgb_i2
+   Register : u_vga_core/u0_pel_y__i15
+   Register : u_vga_core/u0_pel_y__i14
+   Register : u_vga_core/u0_pel_y__i13
+   Register : u_vga_core/u0_pel_y__i12
+   Register : u_vga_core/u0_pel_y__i11
+   Register : u_vga_core/u0_pel_y__i10
+   Register : u_vga_core/u0_pel_y__i9
+   Register : u_vga_core/u0_pel_y__i8
+   Register : u_vga_core/u0_pel_y__i7
+   Register : u_vga_core/ball_x_dir_i2
+   Register : u_vga_core/ball_x_dir_i3
+   Register : u_vga_core/ball_x_dir_i4
+   Register : u_vga_core/ball_x_dir_i5
+   Register : u_vga_core/ball_x_dir_i6
+   Register : u_vga_core/ball_x_dir_i7
+   Register : u_vga_core/ball_x_dir_i8
+   Register : u_vga_core/ball_x_dir_i9
+   Register : u_vga_core/ball_x_dir_i10
+   Register : u_vga_core/ball_x_dir_i11
+   Register : u_vga_core/ball_y_dir_i1
+   Register : u_vga_core/ball_y_dir_i2
+   Register : u_vga_core/ball_y_dir_i3
+   Register : u_vga_core/ball_y_dir_i4
+   Register : u_vga_core/ball_y_dir_i5
+   Register : u_vga_core/ball_y_dir_i6
+   Register : u_vga_core/ball_y_dir_i7
+
+   Register : u_vga_core/ball_y_dir_i8
+   Register : u_vga_core/ball_y_dir_i9
+   Register : u_vga_core/ball_y_dir_i10
+   Register : u_vga_core/ball_y_dir_i11
+   Register : u_vga_core/line_rgb__i8
+   Register : u_vga_core/line_rgb__i16
+   Register : u_vga_core/vga_rgb_ball__i7
+   Register : u_vga_core/vga_rgb_ball__i15
+   Register : u_vga_core/vga_rgb_ball__i23
+   Register : u_vga_core/vga_rgb_line__i7
+   Register : u_vga_core/vga_rgb_line__i15
+   Register : u_vga_core/vga_rgb_line__i23
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_l_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 21 
+
+     Type and instance name of component: 
+   Register : u_vga_core/u0_vga_timing/fsm_h__i0
+   Register : u_vga_core/u0_vga_timing/cnt_h_i0
+   Register : u_vga_core/u0_vga_timing/vid_new_frame_83
+   Register : u_vga_core/u0_vga_timing/fsm_h__i1
+   Register : u_vga_core/u0_vga_timing/cnt_h_i1
+   Register : u_vga_core/u0_vga_timing/cnt_h_i2
+   Register : u_vga_core/u0_vga_timing/cnt_h_i3
+   Register : u_vga_core/u0_vga_timing/cnt_h_i4
+   Register : u_vga_core/u0_vga_timing/cnt_h_i5
+   Register : u_vga_core/u0_vga_timing/cnt_h_i6
+   Register : u_vga_core/u0_vga_timing/cnt_h_i7
+   Register : u_vga_core/u0_vga_timing/cnt_h_i8
+   Register : u_vga_core/u0_vga_timing/cnt_h_i9
+   Register : u_vga_core/u0_vga_timing/cnt_h_i10
+   Register : u_vga_core/u0_vga_timing/cnt_h_i11
+   Register : u_vga_core/u0_vga_timing/cnt_h_i12
+   Register : u_vga_core/u0_vga_timing/cnt_h_i13
+   Register : u_vga_core/u0_vga_timing/cnt_h_i14
+   Register : u_vga_core/u0_vga_timing/cnt_h_i15
+   Register : u_vga_core/u0_vga_timing/vid_new_frame_83_rep_47
+   Register : u_vga_core/u0_vga_timing/vid_new_frame_83_rep_46
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 62 MB
+        
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

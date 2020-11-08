@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "D:/31_WS/Lattice/HDMI_TFP410"  

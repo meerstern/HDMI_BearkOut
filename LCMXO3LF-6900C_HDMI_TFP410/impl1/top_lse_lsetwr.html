@@ -1,0 +1,339 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Jan 19 00:15:11 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets out_vga_ck_c]
+            3723 items scored, 3723 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 6.418ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u_vga_core/u0_vga_timing/fsm_v__i1  (from out_vga_ck_c +)
+   Destination:    FD1P3AX    D              \u_vga_core/u0_vga_timing/cnt_v_i0_i15  (to out_vga_ck_c +)
+
+   Delay:                  11.272ns  (41.7% logic, 58.3% route), 15 logic levels.
+
+ Constraint Details:
+
+     11.272ns data_path \u_vga_core/u0_vga_timing/fsm_v__i1 to \u_vga_core/u0_vga_timing/cnt_v_i0_i15 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 6.418ns
+
+ Path Details: \u_vga_core/u0_vga_timing/fsm_v__i1 to \u_vga_core/u0_vga_timing/cnt_v_i0_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \u_vga_core/u0_vga_timing/fsm_v__i1 (from out_vga_ck_c)
+Route        13   e 1.554                                  \u_vga_core/u0_vga_timing/fsm_v[1]
+LUT4        ---     0.448              B to Z              \u_vga_core/u0_vga_timing/i1_2_lut_rep_36
+Route         2   e 0.954                                  \u_vga_core/u0_vga_timing/n3536
+LUT4        ---     0.448              C to Z              \u_vga_core/u0_vga_timing/i2_2_lut_3_lut_4_lut
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/n6_adj_784
+LUT4        ---     0.448              D to Z              \u_vga_core/u0_vga_timing/i2083_4_lut
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n3335
+MUXL5       ---     0.212           ALUT to Z              \u_vga_core/u0_vga_timing/i2084
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/n3336
+LUT4        ---     0.448              D to Z              \u_vga_core/u0_vga_timing/i3_3_lut_4_lut
+Route        16   e 1.516                                  \u_vga_core/u0_vga_timing/n23
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_vga_core/u0_vga_timing/add_277_1
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2931
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_3
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2932
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_5
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2933
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_7
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2934
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_9
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2935
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_11
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2936
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_13
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2937
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_15
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2938
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_vga_core/u0_vga_timing/add_277_17
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/cnt_v_15__N_746[15]
+                  --------
+                   11.272  (41.7% logic, 58.3% route), 15 logic levels.
+
+
+Error:  The following path violates requirements by 6.324ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \u_vga_core/u0_vga_timing/cnt_v_i0_i1  (from out_vga_ck_c +)
+   Destination:    FD1P3AX    D              \u_vga_core/u0_vga_timing/cnt_v_i0_i15  (to out_vga_ck_c +)
+
+   Delay:                  11.178ns  (42.1% logic, 57.9% route), 15 logic levels.
+
+ Constraint Details:
+
+     11.178ns data_path \u_vga_core/u0_vga_timing/cnt_v_i0_i1 to \u_vga_core/u0_vga_timing/cnt_v_i0_i15 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 6.324ns
+
+ Path Details: \u_vga_core/u0_vga_timing/cnt_v_i0_i1 to \u_vga_core/u0_vga_timing/cnt_v_i0_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \u_vga_core/u0_vga_timing/cnt_v_i0_i1 (from out_vga_ck_c)
+Route         9   e 1.363                                  \u_vga_core/u0_vga_timing/cnt_v[1]
+LUT4        ---     0.448              C to Z              \u_vga_core/u0_vga_timing/i1_2_lut_rep_31_3_lut
+Route         3   e 1.051                                  \u_vga_core/u0_vga_timing/n3531
+LUT4        ---     0.448              C to Z              \u_vga_core/u0_vga_timing/i4_4_lut_4_lut
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/n3131
+LUT4        ---     0.448              B to Z              \u_vga_core/u0_vga_timing/i2095_3_lut
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n3334
+MUXL5       ---     0.212           BLUT to Z              \u_vga_core/u0_vga_timing/i2084
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/n3336
+LUT4        ---     0.448              D to Z              \u_vga_core/u0_vga_timing/i3_3_lut_4_lut
+Route        16   e 1.516                                  \u_vga_core/u0_vga_timing/n23
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_vga_core/u0_vga_timing/add_277_1
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2931
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_3
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2932
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_5
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2933
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_7
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2934
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_9
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2935
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_11
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2936
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_13
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2937
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_15
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2938
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_vga_core/u0_vga_timing/add_277_17
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/cnt_v_15__N_746[15]
+                  --------
+                   11.178  (42.1% logic, 57.9% route), 15 logic levels.
+
+
+Error:  The following path violates requirements by 6.306ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \u_vga_core/u0_vga_timing/cnt_v_i0_i6  (from out_vga_ck_c +)
+   Destination:    FD1P3AX    D              \u_vga_core/u0_vga_timing/cnt_v_i0_i15  (to out_vga_ck_c +)
+
+   Delay:                  11.160ns  (42.2% logic, 57.8% route), 15 logic levels.
+
+ Constraint Details:
+
+     11.160ns data_path \u_vga_core/u0_vga_timing/cnt_v_i0_i6 to \u_vga_core/u0_vga_timing/cnt_v_i0_i15 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 6.306ns
+
+ Path Details: \u_vga_core/u0_vga_timing/cnt_v_i0_i6 to \u_vga_core/u0_vga_timing/cnt_v_i0_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \u_vga_core/u0_vga_timing/cnt_v_i0_i6 (from out_vga_ck_c)
+Route         5   e 1.222                                  \u_vga_core/u0_vga_timing/cnt_v[6]
+LUT4        ---     0.448              A to Z              \u_vga_core/u0_vga_timing/i2064_2_lut_rep_35
+Route         5   e 1.174                                  \u_vga_core/u0_vga_timing/n3535
+LUT4        ---     0.448              B to Z              \u_vga_core/u0_vga_timing/i2_3_lut_4_lut_adj_18
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/n3280
+LUT4        ---     0.448              A to Z              \u_vga_core/u0_vga_timing/i2095_3_lut
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n3334
+MUXL5       ---     0.212           BLUT to Z              \u_vga_core/u0_vga_timing/i2084
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/n3336
+LUT4        ---     0.448              D to Z              \u_vga_core/u0_vga_timing/i3_3_lut_4_lut
+Route        16   e 1.516                                  \u_vga_core/u0_vga_timing/n23
+A1_TO_FCO   ---     0.752           A[2] to COUT           \u_vga_core/u0_vga_timing/add_277_1
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2931
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_3
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2932
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_5
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2933
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_7
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2934
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_9
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2935
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_11
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2936
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_13
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2937
+FCI_TO_FCO  ---     0.143            CIN to COUT           \u_vga_core/u0_vga_timing/add_277_15
+Route         1   e 0.020                                  \u_vga_core/u0_vga_timing/n2938
+FCI_TO_F    ---     0.544            CIN to S[2]           \u_vga_core/u0_vga_timing/add_277_17
+Route         1   e 0.788                                  \u_vga_core/u0_vga_timing/cnt_v_15__N_746[15]
+                  --------
+                   11.160  (42.2% logic, 57.8% route), 15 logic levels.
+
+Warning: 11.418 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets out_vga_ck_c]            |     5.000 ns|    11.418 ns|    15 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\u_vga_core/u0_vga_timing/n23           |      16|    3372|     90.57%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3336         |       1|    3372|     90.57%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3334         |       1|    1798|     48.29%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2934         |       1|    1716|     46.09%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2935         |       1|    1716|     46.09%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3335         |       1|    1574|     42.28%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2933         |       1|    1492|     40.08%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2936         |       1|    1492|     40.08%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2932         |       1|    1048|     28.15%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2937         |       1|    1048|     28.15%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3131         |       1|     913|     24.52%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3533         |       2|     911|     24.47%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3280         |       1|     885|     23.77%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v[2]      |      12|     572|     15.36%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n10_adj_786   |       1|     572|     15.36%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/fsm_v[1]      |      13|     512|     13.75%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n6_adj_784    |       1|     493|     13.24%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v[6]      |       5|     490|     13.16%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v[9]      |       5|     490|     13.16%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v[3]      |       9|     456|     12.25%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3531         |       3|     429|     11.52%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n3532         |       1|     429|     11.52%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v[0]      |      12|     426|     11.44%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v[1]      |       9|     426|     11.44%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v_15__N_74|        |        |
+6[15]                                   |       1|     416|     11.17%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2931         |       1|     400|     10.74%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/n2938         |       1|     400|     10.74%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v_15__N_74|        |        |
+6[13]                                   |       1|     376|     10.10%
+                                        |        |        |
+\u_vga_core/u0_vga_timing/cnt_v_15__N_74|        |        |
+6[14]                                   |       1|     376|     10.10%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 3723  Score: 17839543
+
+Constraints cover  15252 paths, 999 nets, and 2077 connections (87.9% coverage)
+
+
+Peak memory: 75530240 bytes, TRCE: 7450624 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

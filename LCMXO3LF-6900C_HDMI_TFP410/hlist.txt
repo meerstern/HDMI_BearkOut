@@ -1,0 +1,4 @@
+hlist.txt
+top.v
+  vga_core.v
+    vga_timing.v
